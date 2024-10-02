@@ -1,0 +1,120 @@
+.financial-report {
+    padding: 2rem;
+    background-color: white;
+  }
+  
+
+  .report-cards {
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  
+  .report-card {
+    flex:  calc(20%);
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(101, 98, 98, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .report-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-icon {
+    font-size: 3rem;
+    margin-right: 1rem;
+  }
+  
+  .card-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #7d7d7d;
+  }
+  /*heading for all pages*/
+  .heading{ 
+    font-family: Helvetica;
+    font-weight: bold;
+    margin-top:3px ;
+    font-size: 35px;
+    margin-bottom: 29px;
+    color: rgb(123, 123, 123);
+    padding-bottom:13px;
+    border-bottom: 1.7px solid rgb(182, 180, 180);
+  }
+  .card-info p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #373636;
+    margin: 0.5rem 0 0;
+  }
+  
+  /* Icons with specific colors */
+.employee-icon {
+  color: #272727;
+  font-size: 33px;
+}
+
+.customer-icon {
+  color: #b3b3b3;
+}
+
+.male-icon {
+  color: #60adff;
+}
+
+.female-icon {
+  color: #ff69b4;
+}
+
+.transaction-icon {
+  color: #ffb400;
+}
+
+.deposit-icon {
+  color: #45a55b;
+}
+
+.withdrawal-icon {
+  color: #ff0404;
+}
+
+.loans-icon {
+  color: #ff0486;
+}
+
+.interest-icon {
+  color: #00c6a7;
+}
+
+.accounts-icon {
+  color: #548cd0;
+}
+
+.balance-icon {
+  color: #007bff;
+}
+
+.loan-approval-icon {
+  color: #f0ad4e;
+}
+ 
+  
+  @media (max-width: 768px) {
+    .report-card {
+      flex: 1 1 calc(45% - 1rem);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .report-card {
+      flex: 1 1 100%;
+    }
+  }
+  

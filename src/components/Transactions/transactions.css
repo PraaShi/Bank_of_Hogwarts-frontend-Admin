@@ -1,0 +1,127 @@
+/* Main content layout */
+.main-content {
+    font-family: 'Roboto', sans-serif;
+    padding: 2rem;
+    background-color: white;
+  }
+  .no-transactions{
+    margin-right: 50px;
+  }
+  .transactions-container {
+    background-color: white;
+    border-radius: 8px;
+    
+    padding: 1.5rem;
+  }
+  .theading{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 460px;
+    color: grey;
+  }
+  
+  .filter-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .search-bar {
+    padding: 0.75rem;
+    width: 250px;
+    font-size: 1rem;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filter-dropdown {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .date-picker {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem;
+  }
+  
+  .date-picker input[type="date"] {
+    padding: 0.75rem;
+    border-radius: 35px;
+    border: none;
+    font-size: 1rem;
+    margin-left: 10px;
+    box-shadow: 0 3px 8px rgba(244, 0, 0, 0.1);
+  }
+  
+  .search-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #080808;
+    color: #ffffff;
+    font-size: 1rem;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(45, 123, 225, 0.1);
+  }
+  
+  .search-button:hover {
+    background-color: #f0b40c;
+  }
+  
+  .transactions-table {
+    width: 100%;
+    border-collapse: collapse; /* Removes vertical lines */
+    margin-top: 1rem;
+  }
+  
+  .transactions-table th, .transactions-table td {
+    padding: 1rem;
+    text-align: left;
+    color: #333333;
+  }
+  
+  .transactions-table th {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #555555;
+    background-color: #fafafa;
+    padding-bottom: 1.2rem;
+  }
+  
+  .transactions-table td {
+    padding: 1.2rem 0.5rem;
+    color: #333333;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05); /* Soft line between rows */
+  }
+  
+  /* Highlight different transaction types with a colored underline */
+  .withdrawal td {
+    border-bottom: 2px solid #ff4d4d;
+  }
+  
+  .deposit td {
+    border-bottom: 2px solid #4caf50;
+  }
+  
+  .transfer td {
+    border-bottom: 2px solid #ffc107;
+  }
+  
+  .loan td {
+    border-bottom: 2px solid #007bff;
+  }
+  
+  
+  
+  /* Remove vertical lines between columns */
+  .transactions-table th, .transactions-table td {
+    border-left: none;
+    border-right: none;
+  }
+  

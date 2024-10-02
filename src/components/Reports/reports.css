@@ -1,0 +1,98 @@
+.financial-report {
+    padding: 2rem;
+    background-color: white;
+  }
+  
+
+  .report-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  
+  .report-card {
+    flex: 1 1 calc(30% - 1rem);
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(101, 98, 98, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .report-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-icon {
+    font-size: 3rem;
+    margin-right: 1rem;
+  }
+  
+  .card-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  .heading1{
+    font-family: Helvetica;
+    font-weight: bold;
+    margin-top:0px ;
+    font-size: 35px;
+    margin-left: 400px;
+    margin-bottom: 29px;
+    color: rgb(95, 94, 94);
+  }
+  .card-info p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #5f5f5f;
+    margin: 0.5rem 0 0;
+  }
+  
+  /* Color Psychology for Icons */
+  .deposit-icon {
+    color: #45a55b; /* Green for positive gains */
+  }
+  
+  .withdrawal-icon {
+    color: #ff0404; /* Red for loss */
+  }
+  
+  .loans-icon {
+    color: #ff0486; /* Yellow for loans */
+  }
+  
+  .balance-icon {
+    color: #007bff; /* Blue for balance */
+  }
+  
+  .interest-icon {
+    color: rgb(255, 166, 0);
+   /* Teal for interest income */
+  }
+  
+  .accounts-icon {
+    color: #548cd0;
+  }
+  
+  .loans-center-icon {
+    color: #0f0e0d; /* Orange for active loans */
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .report-card {
+      flex: 1 1 calc(45% - 1rem);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .report-card {
+      flex: 1 1 100%;
+    }
+  }
+  

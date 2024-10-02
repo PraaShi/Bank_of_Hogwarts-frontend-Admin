@@ -1,0 +1,86 @@
+.deactivation-account-container {
+    width: 90%;
+    margin: auto;
+}
+.dheading{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 370px;
+    color: grey;
+  }
+  
+.deactivation-account-row {
+    background-color: #fefeff;
+    border: 1px solid #101010;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.deactivation-main-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.deactivation-account-type, .deactivation-account-status {
+    flex: 1;
+    padding: 0 10px;
+    font-size: 1rem;
+    color: #333;
+    min-width: 150px;
+}
+
+.deactivation-account-name {
+    flex: 2;
+    padding: 0 10px;
+    font-size: 1rem;
+    color: #333;
+    text-align: left;
+    min-width: 250px;
+}
+
+.deactivation-action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.deactivation-approve-btn, .deactivation-reject-btn {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+}
+
+.deactivation-reject-btn {
+    background-color: #ff4c4c;
+}
+
+.deactivation-approve-btn:hover, .deactivation-reject-btn:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .deactivation-account-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .deactivation-main-details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .deactivation-account-name, .deactivation-account-type, .deactivation-account-status {
+        min-width: unset;
+    }
+}

@@ -1,0 +1,94 @@
+/* AddEmployee.css */
+
+.add-employee-container {
+  border: none;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0px 0px rgba(255, 255, 255, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Classy and professional font */
+}
+.form-container{
+  border: none;
+}
+.form-header {
+  text-align: center;
+  font-size: 2rem;
+  color: #878686;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.add-employee-form {
+  display: flex 1;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-group{
+  width: 100%; /* Side by side for spacious layout */
+  margin-bottom: 20px;
+  
+}
+
+.form-group.full-width {
+  width: 100%; /* For full width fields like select or textareas */
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  color: #666;
+  border: none;
+  background-color: none;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.form-input {
+  display: flex;
+  flex: 1;
+  width: 97%;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 2px solid #3c3c3c; /* Line-style input fields */
+  background-color:none;
+  transition: border-color 0.3s;
+  outline: none;
+}
+
+.form-input:focus {
+  border-bottom: 2px solid #75a6da; /* Change color on focus */
+}
+
+select.form-input {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #71a1d4;
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .form-group {
+      width: 100%; /* Stack fields on smaller screens */
+  }
+}

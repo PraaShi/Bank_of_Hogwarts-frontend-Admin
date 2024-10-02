@@ -1,0 +1,151 @@
+/* Sidebar styling */
+.sidebar {
+  width: 250px;
+  background-color: #fbfbfb;
+  padding: 20px;
+  color: rgb(235, 229, 229);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  font-family: 'Arial', sans-serif;
+  overflow-y: auto; /* Enable independent scrolling */
+  scrollbar-width:thin; /* For Firefox */
+  scrollbar-color: #323232 #fffefe; /* Custom scrollbar colors */
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 6px; /* Width of scrollbar */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #0569cd; /* Color of the scrollbar */
+  border-radius: 10px;
+}
+
+.sidebar .logo {
+  margin-left: 4px;
+  font-size: 14px;
+  color: rgb(134, 130, 130);
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+.bank{
+  margin-left: 40px;
+  font-size: 20px;
+  font-weight: bold;
+
+  color: #131313;
+  
+  font-family:'Times New Roman', Times, serif;
+  
+}
+.sidebar .logo i {
+  color: #000000;
+  margin-right: -25px;
+  font-size: 37px;
+  margin-left: 7px; /* Ensure icon is larger for the logo */
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-bottom: 20px;
+}
+
+.nav-links li a {
+  color: #848484;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex ;
+  border:2px solid whitesmoke;
+  align-items: center; /* Align icon and text vertically */
+  padding: 19px 20px;
+  transition: all 0.3s;
+  border-radius: 4px;
+  margin-left: -10px;
+}
+
+.nav-links li a i {
+  margin-right: 10px; /* Ensure consistent spacing between icon and text */
+  font-size: 20px;
+}
+
+.nav-links li a:hover {
+  background-color: #e7e7e7;
+  padding-right: 10px;
+  color: #040404;
+  background-color: gray;
+  border-radius: 15px;
+  border-bottom:2px solid #000000;
+  border-top:2px solid #000000;
+
+}
+
+.nav-links li a:hover i {
+  transform: scale(1.2); /* Enlarge icon slightly on hover */
+}
+
+.active {
+  background-color: #1e1e1e; /* Highlight the active item */
+}
+
+.dashBoard {
+  margin-left: 2.6px;
+  font-family:'Verdana';
+  color: #848484;
+}
+
+.manageAccounts {
+  font-family:'Verdana';
+  
+  color: #848484;
+}
+
+.manageLoans {
+  font-family: 'verdana';
+  margin-left: 1.9px;
+ 
+  color: #848484;
+  margin-top: -4.5px;
+}
+
+.deactivationRequests {
+  
+  font-family: 'verdana';
+  margin-left: -1.3px;
+ 
+  color: #848484;
+}
+
+.transactions {
+  
+  font-family: 'verdana';
+  margin-left: 1.7px;
+
+  color: #848484;
+}
+
+.reports {
+
+  font-family: 'verdana';
+  margin-left: 9px;
+
+  color: #848484;
+}
+
+.sign{
+  font-family: 'verdana';
+  margin-left: 9px;
+
+  color: #848484;
+}
+  
+

@@ -1,0 +1,170 @@
+.main-content {
+  padding: 20px;
+}
+.msg{
+  margin-top: 200px;
+  margin-left: 350px;
+  font-size: 2rem;
+  color: #848484;
+}
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: 260px;
+  display: flex ;
+  justify-content: right;
+  background-color: white;
+  border-bottom: 3px solid #e5e5e5;
+  justify-content: space-around;
+  padding: 10px 0;
+  z-index: 1000;
+  
+}
+
+.tab-button {
+  background: none;
+  border: none;
+  padding: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: relative;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.tab-button:hover::after {
+  content: '';
+  position: absolute;
+  width: 10%;
+  height: 3px;
+  background: rgb(8, 8, 9);
+  animation: underline 0.5s forwards;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s;
+  width: 100%;
+  margin-bottom: 5px;
+}
+@keyframes underline {
+  from {
+      width: 0;
+  }
+  to {
+      width: 100%;
+  }
+}
+/* Style for the container holding the search input and dropdown */
+.search-filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the search input */
+.search-input {
+  flex: 1;
+  padding: 10px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-right: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Style for the filter dropdown */
+.filter-dropdown12 {
+  flex: 0.3;
+  padding: 10px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.filter-dropdown12:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .search-filter-container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .search-input {
+      margin-bottom: 10px;
+      width: 100%;
+  }
+
+  .filter-dropdown {
+      width: 100%;
+  }
+}
+
+.tab-button:hover::after, .tab-button:hover::after {
+  width: 100%;
+}
+.account-container {
+  margin-top: 60px; /* Space for fixed header */
+}
+
+.account-row {
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.main-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.head{
+  margin-right: 1000px;
+  margin-top: 10px;
+  margin-bottom:10px;
+  font-family: 'Helvetica';
+  font-size: 17px;
+  font-weight: bold;
+}
+.profile-details {
+  margin-top: 10px;
+}
+
+.passbook-header {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.passbook-content {
+  margin: 10px 0;
+}
+
+.profile-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.action-buttons {
+  margin-top: 10px;
+}
+
